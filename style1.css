@@ -1,0 +1,254 @@
+@import url('http://fonts.cdnfonts.com/css/simple-brush-script');
+
+/* to add  required font for text*/
+* {
+    text-decoration: none;
+    color: black;
+}
+
+/* to clear text decorations such as under lines in link and to change color of link text*/
+body {
+    width: auto;
+    margin: auto;
+    padding: 30px;
+    text-decoration: none;
+    background-color: pink;
+}
+
+#top-navigation {
+    height: 15vh;
+    background-color: #FF5733;
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    color: white;
+}
+
+/* to add  background color and give space around text and content display in flex, and given color*/
+.top-nav-links {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.2s ease-in-out;
+    width: 40%;
+    color: white;
+
+
+}
+
+/* to add  space between content ,color of text, display flex and add transition to link text*/
+.top-nav-links a {
+    color: white;
+    font-weight: 700;
+    transition: 0.1s ease-in-out;
+}
+
+.top-nav-links li:hover {
+    background-color: gold;
+}
+
+
+
+h1 {
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* to change color and size of font*/
+.discount {
+    font-family: 'Simple Brush Script', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    color: rgb(154, 226, 86);
+}
+
+/* to change color and size of font and change font-family*/
+#select1 {
+    align-items: center;
+    height: 25px;
+}
+
+#search {
+    width: 400px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+#main-navigation {
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    color: black;
+    text-emphasis-color: black;
+    transition: 0.2s ease-in-out;
+
+}
+
+/* to add  background color and give space around text and content display in flex, and given color*/
+.main-nav-links {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    color: black;
+    text-emphasis-color: black;
+
+
+}
+
+.main-nav-links li:hover {
+    color: #FF5733;
+    font-weight: 700;
+    transition: 0.1s ease-in-out;
+}
+
+/* to add  space between content ,color of text, display flex and add transition to link text*/
+.carousel {
+    margin: auto;
+    background-color: rgb(105, 113, 105);
+    height: 450px;
+    width: 90%;
+    display: flex;
+
+}
+
+/* make attractive button*/
+.signin {
+    border-radius: 25px;
+    background-color: #FF5733;
+    border-color: #FF5733;
+    color: white;
+    font-size: larger;
+
+}
+
+.adv-description {
+    text-align: left;
+    align-items: center;
+    margin: auto;
+
+}
+
+/* make attractive button*/
+.shopnow {
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: #FF5733;
+    border-color: #FF5733;
+    color: white;
+    padding: 10px;
+}
+
+.category {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* to make attractive content in shop by category by adding grid and border, padding,margin and altering text rel.*/
+.shop-by-category {
+    cursor: pointer;
+
+    gap: 16px;
+    --num-cols: 3;
+    box-sizing: border-box;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    position: relative;
+    margin: auto;
+ text-align: center;
+
+
+}
+
+.category-card{
+    height: 340px;
+    background-size: cover;
+    position: relative;
+}
+.women {
+    
+    background-image: url('./images/cat1.jpg');
+    
+}
+.category-card h2{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+.category-card button{
+    position: absolute;
+    bottom: 150px;
+    right: 50px;
+}
+
+
+.ethnic {
+   
+    background-image: url('./images/cat2.jpg');
+
+}
+
+.men {
+    height: 340px;
+    background-size: cover;
+    background: url('./images/cat3.jpg');
+
+
+}
+
+/* to make attractive content in latest products by adding grid and border, padding,margin and altering text rel.*/
+
+.latest-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    gap: 15px;
+
+    text-align: center;
+
+}
+
+.latest-products:hover {
+    background-color: rgba(234, 214, 214, 0.377);
+    font-weight: 700;
+    transition: background-color 0.1s ease-in-out;
+}
+
+/*to make convinent payment */
+
+.foo-nav {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: #FF5733;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+
+
+}
+
+.payment {
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+
+}
+
+.social-media {
+    justify-content: space-between;
+    width: 20%;
+    align-items: center;
+}
